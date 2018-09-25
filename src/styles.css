@@ -1,8 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+  padding-bottom: 50px;
+}
+
 .main-container{
     margin-top: 20px;
 }
 
+
+/* Inicio de style de inicio suave 
+PRIMERO: animated.
+SEGUNDO: fadeIn.
+TERCERO: fast. */
 .animated {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
@@ -30,3 +39,4 @@
   .fadeIn {
     animation-name: fadeIn;
   }
+  /* FIN DE STYLE DE INICIO */
