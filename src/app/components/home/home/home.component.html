@@ -1,5 +1,25 @@
-<div class="jumbotron jumbotron-fluid animated fadeIn fast">
-    <div class="container">
-        <h1 class="display-4">The Avenger</h1>
+<div class="row">
+
+    <div class="col">
+        <h5>Ejemplo de *ngIf</h5>
+        <hr>
+        <div *ngIf="mostrar" class="card bg-light mb-3" style="max-width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">{{frase.autor}}</h5>
+                <p class="card-text">{{frase.mensaje}}</p>
+            </div>
+        </div>
+        <button (click)="mostrar = !mostrar" class="btn btn-outline color">Mostrar/Ocultar</button>
+
     </div>
+
+
+    <div class="col">
+        <h5>Ejemplo de *ngFor</h5>
+        <hr>
+        <ul class="list-group">
+            <li *ngFor="let c of tecnologias; let i= index" class="list-group-item">{{i+1}} - {{c}}</li>
+        </ul>
+    </div>
+
 </div>
