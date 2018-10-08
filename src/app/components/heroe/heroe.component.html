@@ -1,3 +1,28 @@
-<p>
-  heroe works!
-</p>
+
+<div class="animated fadeIn fast">
+<div class="row">
+    <button (click)="direccionarHeroes()" class="btn btn-outline-primary ">Todos los heroes</button>
+</div>
+
+<hr>
+
+<div class="row">
+  <div class="col-md-10">
+        <h3>{{ heroe.nombre }}<small> - {{ heroe.aparicion }}</small></h3>
+  </div>
+  <br>
+</div>
+<hr>
+
+<div class="row">
+  <div class="col-md-4">
+      <img [src]="heroe.img" width="360" height="310" alt="">
+  </div>
+  <div class="col-md-8">
+    <br>
+      <p>{{ heroe.bio }}</p>
+  </div>
+  <hr>  
+</div>
+
+</div>

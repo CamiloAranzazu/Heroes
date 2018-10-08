@@ -24,7 +24,7 @@ import { HeroeComponent } from './components/heroe/heroe.component';
     HeroesComponent,
     AboutComponent,
     FooterComponent,
-    HeroeComponent
+    HeroeComponent,
   ],
   imports: [
     BrowserModule,

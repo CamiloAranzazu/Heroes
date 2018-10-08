@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 export class HeroesComponent implements OnInit {
 
   heores: Heroe[] = [];
-  constructor( private _heroesService: HeroesService, private router:Router) {
+  constructor( private _heroesService: HeroesService, private router: Router) {
 
   }
 
@@ -18,7 +18,7 @@ export class HeroesComponent implements OnInit {
   this.heores = this._heroesService.getHeroes();
   console.log(this.heores);
   }
-  direccionar(idx:number){
-    this.router.navigate(['/heroe',idx])
+  direccionar(idx: number) {
+    this.router.navigate(['/heroe', idx]);
   }
 }
